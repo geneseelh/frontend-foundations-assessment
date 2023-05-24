@@ -140,7 +140,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 480px) {
+@media all and (max-width: 480px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -212,5 +212,12 @@ footer p {
   #host div {
     width: 50%;
     flex: 1;
+  }
+
+  /* -------  Media Query to fix logo issue & white bar ------- */
+  @media all and (max-width: 340px) {
+    .logo {
+      font-size: 22px;
+    }
   }
 }
